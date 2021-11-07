@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <div style="color: green; font-size: 31px">
+      <script language="JavaScript">
+        var D1_fil = prompt("D1=", "");
+        var D2_fil = prompt("D2=", "");
+        var suma;
+        var czas;
+        var a = parseFloat(D1_fil);
+        var b = parseFloat(D2_fil);
+        if (b <= a) czas = D1_fil * 86400 - D2_fil * 86400;
+        if (b <= a) document.write("Minelo " + czas + " sekund");
+
+        if (a < b) document.write("Wprowadzono złą wartość");
+      </script>
+    </div>
+  </body>
+</html>

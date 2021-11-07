@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>
+ Przykład obliczenia V i Pc walca
+</title>
+ <script language="JavaScript">
+function P(a_fil,b_fil)
+{
+    a_liczba=parseFloat(a_fil)
+    b_liczba=parseFloat(b_fil)
+    P_wynik=(a_liczba*b_liczba)
+    document.getElementsByName("POLE1")[0].value=P_wynik.toFixed(2);
+    pokaz1.innerHTML="Pole="+P_wynik.toFixed(2)+" cm^2"+"<br>";
+}
+
+function O(a_fil,b_fil)
+{
+    a_liczba=parseFloat(a_fil)
+    b_liczba=parseFloat(b_fil)
+    O_wynik=(2*a_liczba+2*b_liczba)
+    document.getElementsByName("OBWOD1")[0].value=O_wynik.toFixed(2);
+    pokaz2.innerHTML="Obwód="+O_wynik.toFixed(2)+" cm"+"<br>";
+}
+
+
+ </script>
+</head>
+Obliczanie Pola i Obwodu prostokąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="P(this.bokA.value,this.bokB.value);
+O(this.bokA.value,this.bokB.value);return false">
+Podaj dlugosc a=
+<input size="6" name="bokA">
+Podaj dlugoc b=
+<input size="6" name="bokB">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Pole=
+<input size="6" name="POLE1">
+Obwód=
+<input size="6" name="OBWOD1">
+</form>
+
+
+<table>
+    <tr id="pokaz1"></tr>
+    <tr id="pokaz2"></tr>
+</table>
+
+</body>
+</html>

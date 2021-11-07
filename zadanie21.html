@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>
+ Przykład obliczenia V i Pc walca
+</title>
+ <script language="JavaScript">
+function D(a_fil,b_fil)
+{
+    a_liczba=parseFloat(a_fil)
+    b_liczba=parseFloat(b_fil)
+    D_wynik= Math.sqrt(Math.pow(a_liczba, 2) + Math.pow(a_liczba ,2))
+    document.getElementsByName("Drabina")[0].value=D_wynik.toFixed(2);
+    pokaz1.innerHTML="Drabina="+D_wynik.toFixed(2)+" cm"+"<br>";
+}
+
+function K(a_fil,b_fil)
+{
+    a_liczba=parseFloat(a_fil)
+    b_liczba=parseFloat(b_fil)
+
+    K_wynik= Math.atan(a_liczba/b_liczba)*180/Math.PI
+    document.getElementsByName("KAT")[0].value=K_wynik.toFixed(2);
+    pokaz2.innerHTML="Kąt alfa="+K_wynik.toFixed(2)+" stopni"+"<br>";
+}
+
+
+ </script>
+</head>
+Obliczanie Długości drabiny i Kąta nachylenia względem podłogi
+<br> <br>
+<form name="formularz" action="..." onsubmit="D(this.bokD.value,this.bokX.value);
+K(this.bokD.value,this.bokX.value);return false">
+Podaj wysokość ściany=
+<input size="6" name="bokD">
+Podaj dlugoc X(podstawy)=
+<input size="6" name="bokX">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Drabina=
+<input size="6" name="Drabina">
+Kąt ALFA=
+<input size="6" name="KAT">
+</form>
+
+
+<table>
+    <tr id="pokaz1"></tr>
+    <tr id="pokaz2"></tr>
+</table>
+
+</body>
+</html>

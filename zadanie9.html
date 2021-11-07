@@ -1,0 +1,30 @@
+<html>
+<body>
+<div style="color:green;font-size:31px;">
+<script language="JavaScript">
+var D1_fil=prompt("D1=","");
+var G1_fil=prompt("G1=","");
+var D2_fil=prompt("D2=","");
+var G2_fil=prompt("G2=","");
+var DG1;
+var DG2;
+var czas;
+
+DG1= (D1_fil*86400)+(G1_fil*3600)
+DG2= (D2_fil*86400)+(G2_fil*3600)
+
+var a=parseFloat(D1_fil);
+var b=parseFloat(G2_fil);
+var c=parseFloat(D2_fil);
+var d=parseFloat(G2_fil);
+
+czas= DG1-DG2
+
+if (c<=a)document.write("Minelo "+czas+" sekund");
+
+
+if (a<c) document.write("Wprowadzono złą wartość");;
+</script>
+</div>
+</body>
+</html>
