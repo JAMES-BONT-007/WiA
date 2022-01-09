@@ -1,40 +1,28 @@
 <html>
+
 <body>
 
-    <p style="color:green" > <color="green">MENU:</color></p> <br>
+    <p style="color:green">
+        <color="green">MENU:</color>
+    </p> <br>
     <ul>
-    <li style="color:red" > 1-CZERWONY</li>
-    <li style="color:blue" >2-NIEBIESKI</li>
+        <li style="color:red"> 1-CZERWONY</li>
+        <li style="color:blue">2-NIEBIESKI</li>
     </ul>
 
 
+    <script language="JavaScript">
+        var x = prompt("podaj liczbę x=", "");
+        var a = parseFloat(x);
 
 
 
+        if (a == 1 || x == "czerwony") { document.write("<font color=red size= 7> Wczytano kolor czerwony</font>" + "<br>"); }
 
+        if (a == 2 || x == "niebieski") { document.write("<font color=blue size= 1> Wczytano kolor niebieski" + "<br>"); }
 
- <script language="JavaScript">
-var x=prompt("podaj liczbę x=","");
- var a=parseFloat(x);
-
-
- 
- if(a==1 || x=="czerwony")
- {document.write("<font color=red size= 7> Wczytano kolor czerwony</font>"+"<br>");}
-
-
- 
- if(a==2 || x=="niebieski")
- {document.write("<font color=blue size= 1> Wczytano kolor niebieski"+"<br>");}
-
- </script>
-
-
-
-
-
-
-
+    </script>
 
 </body>
+
 </html>
