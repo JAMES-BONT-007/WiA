@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script language="JavaScript">
+        var liczba = prompt("R = ", "")
+        var R = parseFloat(liczba);
+        var liczbapol_fil = 0;
+        for (var i = -Math.round(R) - 1; i <= Math.round(R) + 1; i++) {
+            for (var j = -Math.round(R) - 1; j <= Math.round(R) + 1; j++) {
+                d = Math.sqrt(i * i + j * j);
+                if (d <= R) {
+                    liczbapol_fil++;
+                    document.write("(" + i + " , " + j + ")" + "  ");
+                }
+            }
+            document.write("<br>");
+        }
+        document.write("ilość punktów kratowych w kole wynosi " + liczbapol_fil + "<br>");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

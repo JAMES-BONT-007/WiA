@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script language="JavaScript">
+        var liczba = prompt("podaj liczbe", "");
+        liczba = parseFloat(liczba);
+        var wynik = 2;
+        document.write(+wynik + "<br>");
+        for (var i = 1; i < liczba; i++) {
+            wynik = wynik + 1;
+            if (wynik % 2 == 0) {
+                if (wynik < liczba) {
+                    document.write("" + wynik + "<br>");
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
