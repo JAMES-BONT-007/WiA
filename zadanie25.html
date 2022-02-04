@@ -1,2 +1,106 @@
 <html>
+    <head>
+
+    </head>
+    <body>
+        Punkt 1 <br>
+        Sposób 1
+        Używając zapisu postaci:<br>
+        a)
+        nazwa_obiektu.nazwa_właściwości="tekst";  dla właściwości typu tekstowego
+        np.
+        auto.marka="Opel Omega";<br>
+        b)
+        nazwa_obiektu.nazwa_właściwości=liczba;  dla właściwości typu liczbowego
+        np.
+        auto.rok=1996;
+        auto.cena=25000;<br>
+        Sposób 2
+        używając zapisu postaci: 
+        nazwa_obiektu[nazwa_właściwości];
+        np. auto[cena]=25000;<br><br>
+
+
+        Punkt 2 <br>
+        Odwołanie do pól (właściwości) i metod.<br>
+        Do właściwości i metod można się odwołać podobnie jak do zwykłych zmiennych
+        i funkcji, trzeba tylko przed ich nazwą umieścić nazwę obiektu, którego są elementami
+        (np. zmienną, która przechowuje dany obiekt), i kropkę.
+        np. console.log(samochod1.kolor);  wyświetla kolor obiektu samochod<br><br>
+
+
+        Punkt 3 <br>
+        Cechy charakterystyczne konstruktora: <br>
+        jest wywoływany (uruchamiany) automatycznie w chwili tworzenia obiektu danej klasy - na
+        rzecz tego obiektu,<br>
+        nazywa się tak samo jak klasa,<br>
+        nie zwraca żadnej wartości ,<br>
+        może przyjmować argumenty - tak jak zwykła funkcja czy metoda, aby następnie powołać do
+        życia obiekt za pomocą operatora new.<br><br>
+
+        Punkt 4 <br>
+var osoba_1 =
+{
+nazwisko : ‘Kowalski’,
+imie :’Jan’,
+zawod :’piekarz’,
+wyświetl :function ()
+{
+Document.write(this.nazwisko + ‘ ‘ + this.imie)
+}
+}<br>
+Uwaga1:<br>
+Słowo kluczowe this  pozwala odwołać się do pola lub metody obiektu z wnętrza tego obiektu.<br>
+Uwaga2:<br>
+Metody i pola muszą być odzielne przecinkami w obrębie jednego obiektu.<br><br>
+
+
+Punkt 5 <br>
+
+Zostanie utworzony konstruktor o nazwie klient z właściwościami nazwisko, imie, zawod oraz 
+metodą wypisz(). Właściwościom obiektu zostały przypisane wartości parametrów. Użyte słowo
+kluczowe this odnosi się do aktualnego obiektu i pozwala na przypisanie wartości parametru do
+odpowiedniego pola tego obiektu.<br>
+function klient(nazwisko_k,imie_k,zawod_k)
+{
+this.nazwisko=nazwisko_k;
+this.imie=imie_k;
+this.zawod=zawod_k;
+wypisz = function ()
+ {
+ alert(this.nazwisko + ' ' + this.imie)
+ }
+}<br><br>
+
+Punkt 6 <br>
+
+
+
+<br><br>
+Punkt 7 <br>
+Do utworzenia nowego obiektu na podstawie konstruktora stosowane jest słowo kluczowe new.<br>
+
+var osoba1 = new klient('Kowalski', 'Jan', 'kierowca');<br>
+var osoba2 = new klient('Nowak', 'Anna', 'sekretarka');<br>
+Powstały dwa nowe obiekty osoba1 i osoba2 należące do klasy klient<br><br>
+
+Punkt 8<br>
+Do definowania metod i właściwości dla obiektu jest wykorzystana właściwości prototype.<br>
+
+function klient()
+{<br>
+this.nazwisko='Bielski';<br>
+this.imie='Paweł';<br>
+}<br>
+klient.prototype.pisz_dane = function ()
+ {<br>
+ document.write(this.nazwisko + ' ' + this.imie)<br>
+ }<br>
+klient.prototype.zawod = 'kierowca';<br>
+var osoba1 = new klient();<br>
+osoba1.pisz_dane();<br>
+
+
+
+    </body>
 </html>
