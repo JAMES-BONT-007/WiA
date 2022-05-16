@@ -1,0 +1,58 @@
+.kwadrat{
+position: relative;
+width: 100px;
+height: 100px;
+margin: 28px;
+margin-bottom: 0;
+display: inline-block;
+}
+
+
+.czer{
+background-color: red;
+}
+
+.nieb{
+  background-color: blue;
+}
+
+.ziel{
+background-color: green;
+}
+
+.zol{
+  background-color:yellow
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.jeden {
+  text-align: center; /* wyśrodkowuje wszystko co jest w class="jeden" nawet gdy nie jest tekstem (chyba) */
+  content: center;
+}
+
+.dwa {
+  background: url("1.png") #cc0000c5 no-repeat center;
+  background-size: 100%;
+  width: 200px;
+  height: 200px;
+  /*border: 3px solid red;*/
+
+  border-radius: 50%;
+  /* border-top-left-radius: 50%;
+border-top-right-radius: 50%;
+border-bottom-left-radius: 50%;
+border-bottom-right-radius: 50%;   tooo samo co powyżej tylko wszyskie rogi osobno*/
+
+  display: inline-block;
+  /* margin: 0 auto; to samo co powyżej*/
+}
