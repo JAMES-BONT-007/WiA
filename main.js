@@ -5,7 +5,7 @@ anime({
     { value: 300, duration: 600},
     { value: 100, duration: 700},
     { value: 100, duration: 1100},
-    { value: 550, duration: 500}
+    { value: 750, duration: 500}
     ],
     rotate:{
         value: "4turn",
