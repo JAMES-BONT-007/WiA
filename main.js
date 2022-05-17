@@ -35,7 +35,7 @@ anime({
     { value: 400, duration: 600},
     { value: 155, duration: 400},
     { value: 155, duration: 1400},
-    { value: 530, duration: 500}
+    { value: 549, duration: 500}
     ],
     rotate:{
         value: "3turn",
@@ -50,7 +50,7 @@ anime({
     { value: 105, duration: 700},
     { value: 200, duration: 400},
     { value: 200, duration: 1300},
-    { value: 560, duration: 500}
+    { value: 549, duration: 500}
     ],
     rotate:{
         value: "5turn",
