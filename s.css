@@ -27,9 +27,3 @@ input:hover {
     /*    transform: rotate(360deg);
 transition: all 0.3s ease-in-out 0s; */
 }
-
-
-.wyrodkowanie {
-    text-align: center; /* wyśrodkowuje wszystko co jest w class="jeden" nawet gdy nie jest tekstem (chyba) */
-    content: center;
- }
