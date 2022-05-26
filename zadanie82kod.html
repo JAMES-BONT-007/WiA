@@ -1,0 +1,56 @@
+<textarea name="" id="" cols="30" rows="10">
+    <html>
+    <head>
+        <title> zadanie 82 </title>
+        <link rel="Stylesheet" href="a.css" />
+        <script language="JavaScript">
+            function pushbutton() {
+                alert("Czesc !");
+            }
+        </script>
+        <style>
+            p {
+                font-size: 70px;
+                color:red;
+            }
+
+            p1 {
+                font-size: 25px;
+                color: darkgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wysrodkowanie">
+            <p>Filip</p>
+            <br>
+            <p1>
+                dzis = new Date() --> zmienna dzis przyjmuje informacje o podanym przez nas czasie z dokładną lokalizacją czasową
+                <br>
+                dzis = dzis.getHours() --> zmienna dzis przyjmuje informacje o aktualnej godzinie
+                <br>
+                dzis = dzis.getMinutes() --> zmienna dzis przyjmuje informacje o aktualnej minucie
+                <br>
+                dzis = dzis.getMonth() + 1 --> zmienna dzis przyjmuje informacje o aktualnym miesiącu
+                <br>
+                dzis = dzis.getDate() --> zmienna dzis przyjmuje informacje o aktualnym dniu
+                <br>
+                dzis = dzis.getFullYear() --> zmienna dzis przyjmuje informacje o aktualnym roku
+            </p1>
+            <br />
+            <br />
+            <br />
+            Ostatnio zmodyfikowany
+            <script language="LiveScript">
+                document.write(document.lastModified, "<br>")
+            </script>
+            <button class="button" type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">Naciśnij mnie</button>
+            <script language="JavaScript">
+                dzis = new Date()
+                document.write("<br>Aktualny czas : ", dzis.getHours(), ":", dzis.getMinutes());
+                document.write("<br>Aktualna data : ", dzis.getDate(), ",", dzis.getMonth() + 1, ",", dzis.getFullYear());
+            </script>
+        </div>
+    </body>
+    </html>
+</textarea>

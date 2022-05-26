@@ -1,0 +1,44 @@
+  <html>
+                <head>
+                    <title> zadanie 84 </title>
+                    <link rel="Stylesheet"  href="a.css" />
+                   
+                    <script language="JavaScript">
+                        function filip_start() {
+                            start_fil = new Date();
+                            poczatek_fil = start_fil.getTime();
+                        }
+                        function filip_stop() {
+                            stop_fil = new Date();
+                            koniec_fil = stop_fil.getTime();
+                            roznica_fil = koniec_fil - poczatek_fil;
+                            pokaz1.innerHTML = roznica_fil / 1000 + " s";
+                        }
+                    </script>
+                    <style>
+                        table {
+                            border: 3px solid red;
+                            padding: 5px;
+                            font-size: 42px;
+                        }
+
+                        body {
+                            text-align: center;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <script language="JavaScript">
+                        dzis_fil = new Date();
+                        document.write("<br>Aktualny czas : ", dzis_fil.getHours(), ":", dzis_fil.getMinutes(), "<br>");
+                    </script>
+                    <input type="button" name="Button1" value="START" onclick="filip_start()">
+                    <input type="button" name="Button2" value="STOP" onclick="filip_stop()">
+                    <center>
+                        <table>
+                            <tr id="pokaz1"></tr>
+                        </table>
+                    </center>
+                   
+                </body>
+                </html>

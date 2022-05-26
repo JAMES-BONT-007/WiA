@@ -1,0 +1,32 @@
+<html>
+                <head>
+                    <title> zadanie 86 </title>
+                    <script language="JavaScript">
+                        function Przycisk1() {
+                            pokaz1.innerHTML = "Ostatnio modyfikowany: " + document.lastModified;
+                        }
+                        function Przycisk2() {
+                            dzis = new Date();
+                            miesiac = parseFloat;
+                            miesiac = dzis.getMonth() + 1;
+                            pokaz2.innerHTML = "<br> Aktualna data: " + dzis.getDate() + "." + miesiac + "." + dzis.getFullYear();
+                        }
+                        function Przycisk3() {
+                            dzis = new Date();
+                            pokaz3.innerHTML = "<br>Aktualny czas: " + dzis.getHours() + ":" + dzis.getMinutes();
+                        }
+                    </script>
+                </head>
+                <body>
+                    <form>
+                        <a onclick="Przycisk1(' ')"><img src="i1.jpeg" alt="Przycisk1" border="0" onmouseover="this.src = 'i2.jpeg'" onmouseout="this.src = 'i1.jpeg'" /></a>
+                        <a onclick="Przycisk2(' ')"><img src="o1.jpeg" alt="Przycisk2" border="0" onmouseover="this.src = 'o2.jpeg'" onmouseout="this.src = 'o1.jpeg'" /></a>
+                        <a onclick="Przycisk3(' ')"><img src="p1.jpeg" alt="Przycisk3" border="0" onmouseover="this.src = 'p2.jpeg'" onmouseout="this.src = 'p1.jpeg'" /></a>
+                    </form>
+                    <table>
+                        <tr id="pokaz1"></tr>
+                        <tr id="pokaz2"></tr>
+                        <tr id="pokaz3"></tr>
+                    </table>
+                </body>
+                </html>
