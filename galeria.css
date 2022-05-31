@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+}
+
+.jeden{
+    width: 60%;
+    margin: auto;
+}
+
+.dwa{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+
+img{
+    height: 250px;
+    width: 500px;
+}
+
+
+
+
+
+
+/* .jeden{
+    width: 1900px;
+    padding: 0;
+}
+
+.dwa{
+    padding: 0;
+}
+
+
+
+
+.dwa img{
+    height: 150px;
+    width: 300px;
+    cursor: pointer;
+}
+
+img{
+    height: 300px;
+    width: 600px;
+
+    aa display: block; 
+    margin: auto;
+}
+
+
+
+
+table
+
+{ 
+
+margin-right: auto;
+
+margin-left: auto;
+
+} */
+
+
+
+
+
+
+
+body{
+    background-color: antiquewhite;
+    margin-top: 105px;
+}
+
+
+
+ 
+.wysrodkowanie{
+    text-align: center; 
+    content: center;
+    /* border: 10px solid red; */
+}  
+
+
+.glowny{
+    overflow: hidden;
+    width: 60%;
+    height: 450px;
+    align-items: auto;
+    margin: auto;
+    background-color: rgb(65, 93, 184);
+}
+
+#gora{
+    height: 30%;
+    background-color: rgb(65, 93, 184);
+}
+#strzalkaL{
+    float: left;
+    display: flex;
+    height: 70%;
+    width: 10%;
+    background-color: rgba(229, 255, 0, 0);
+}
+#strzalkaL:hover{
+
+    height: 70%;
+    width: 10%;
+    background-color: rgba(255, 255, 255, 0.432);
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+
+
+#strzalkaP{
+    float: left;
+    position: relative;
+    height: 70%;
+    width: 10%;
+    background-color: rgba(255, 255, 255, 0);
+}
+#strzalkaP:hover{
+
+    height: 70%;
+    width: 10%;
+    background-color: rgba(255, 255, 255, 0.432);
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+
+#zdjecia{
+    float: left;
+    height: 70%;
+    width: 80%;
+    background-color: rgb(65, 93, 184);
+    text-align: center;
+} 
+
+
+#stop{
+    clear: both;
+    height: 0%;
+    width: 0%;
+    background-color: rgba(0, 0, 0, 0);
+} 
+
+
+
+
+p{
+    font-size: 25px;
+
+}
+
+
+
+
+
+img{
+    height: 100px;
+    width: 250px;
+    padding: 10px;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+ 
