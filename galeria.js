@@ -1,32 +1,32 @@
 function Przycisk1() {
     // zdjecie.innerHTML = '<img src="z1.jpg" alt="ZDJ1"><br> <a onclick="PrzyciskZ()"><p> Zamknij </p></a>';
-    window.open("./Z1.html")
+    window.open("./z1.html")
 }
 
 function Przycisk2() {
     // zdjecie.innerHTML = '<img src="z2.jpg" alt="ZDJ2"><br> <a onclick="PrzyciskZ()"><p> Zamknij </p></a>';
-    window.open("./Z2.html")
+    window.open("./z2.html")
 }
 
 function Przycisk3() {
     // zdjecie.innerHTML = '<img src="z3.jpg" alt="ZDJ3"><br> <a onclick="PrzyciskZ()"><p> Zamknij </p></a>';
-    window.open("./Z3.html")
+    window.open("./z3.html")
 }
 
 function Przycisk4() {
     // zdjecie.innerHTML = '<img src="z4.jpg" alt="ZDJ4"><br> <a onclick="PrzyciskZ()"><p> Zamknij </p></a>';
-    window.open("./Z4.html")
+    window.open("./z4.html")
 }
 
 function Przycisk5() {
     // zdjecie.innerHTML = '<img src="z5.jpg" alt="ZDJ5"><br> <a onclick="PrzyciskZ()"><p> Zamknij </p></a>';
-    window.open("./Z5.html")
+    window.open("./z5.html")
 }
 
 
 function Przycisk6() {
     // zdjecie.innerHTML = '<img src="z6.jpg" alt="ZDJ6"><br> <a onclick="PrzyciskZ()"><p> Zamknij </p></a>';
-    window.open("./Z6.html")
+    window.open("./z6.html")
 }
 
 function PrzyciskZ() {
